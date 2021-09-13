@@ -13,7 +13,7 @@ addCommentButton.addEventListener("click", function () {
   list.appendChild(li);
 });
 
-const deleteCommentButton = document.getElementById("delete-comment");
+const deleteCommentButton = document.getElementById("remove-comments");
 deleteCommentButton.addEventListener("click", function () {
   const list = document.getElementById("list");
   var r = window.confirm("Delete all comments?");
