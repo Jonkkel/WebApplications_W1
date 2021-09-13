@@ -17,10 +17,9 @@ const deleteCommentButton = document.getElementById("remove-comments");
 deleteCommentButton.addEventListener("click", function () {
   const list = document.getElementById("list");
   var r = window.confirm("Delete all comments?");
+
   if (r === true) {
-    while (list.firstChild) {
-      list.removeChild(list.lastChild);
-    }
+    console.log(document.getElementsByTagName("ul")[0]);
   } else {
   }
 });
